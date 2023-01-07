@@ -1,0 +1,54 @@
+class Competicao{
+
+  constructor(atletas){
+    this.atleta = atletas;
+  }
+  mostrarNomeComNota(){
+  
+    return this.atleta.map(function(atleta){ 
+    
+    return `${atleta.nome}: ${atleta.notas}`
+    
+    })
+  
+  }
+  
+  mostrarNomeComMedia(){
+  
+  let menor = this.atletas.forEach(function(atleta){
+  if (atleta.notas < atleta.notas){
+    
+    return atleta.nota
+  }
+  })
+  
+  let maior = this.atletas.forEach(function(atleta){
+  if (atleta.notas > atleta.notas){
+    
+    return atleta.nota
+  }
+  })
+  
+  }
+
+
+}
+
+let atletas = [
+ {
+   nome: "Cesar Abascal",
+   notas: [10, 9.34, 8.42, 10, 7.88]
+ },
+ {
+   nome: "Fernando Puntel",
+   notas:  [8, 10, 10, 7, 9.33]
+ },
+ {
+   nome: "Daiane Jelinsky",
+   notas: [7, 10, 9.5, 9.5, 8]
+ },
+ {
+   nome: "Bruno Castro",
+   notas: [10, 10, 10, 9, 9.5]
+ }
+];
